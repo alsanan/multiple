@@ -1,0 +1,140 @@
+<script>
+    let site= location.host;
+    //window.history.replaceState('', '', 'https://'+params.get('url'));
+    document.title= site;
+</script>
+<link rel="shortcut icon" href="https://vlc.wiki/favicon.ico" type="image/x-icon">
+<center>
+    <!--img src="404.svg" width=404 /-->
+    <div id="bot">🟥🟧🟨🟩🟦</div>
+    <h1><script>document.write(site);</script></h1>
+    <hr/>
+</center>
+<!--input class="alert danger dimmable w-full fixed bottom-0 m-1" type="checkbox" data-label="URL del error [Este dato puede ser imprescindible para resolver el problema] : <?=$_REQUEST['url']?>" checked /-->
+<fieldset vanish type="blue">Contact / Contacte / Contacto : <a href="https://t.me/alsan">@alsan</a> (telegram) </fieldset>
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100');
+@import url('https://alzira.alapont.com/labs/css-corporativo/alapont-clean.css');
+body{
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to right, #33f, #3ff, #3f3, #ff3, #f33, #f3f) center top/100% 2px no-repeat;
+}
+#bot{    
+    font-size: 5rem;
+    _opacity: .7;
+    _z-index: -1;
+    _position: absolute;
+    margin-top: -6rem;
+    letter-spacing:-2rem;
+}
+hr { margin-top:-4rem; }
+h1,h3 { font-family: Advent Pro, sans-serif !important; }
+h1 { font-size:7rem !important; letter-spacing: -0.5rem;}
+fieldset {
+    display: block;
+    border: 1px solid black;
+    border-top: 3px solid gray;
+    _border-radius: var(--border-radius);
+    padding: 0.5em;
+    padding-left: 5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 0.5em;
+    box-shadow: 0 0 4px black;
+    margin-bottom: 0.5em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;        
+    border-top: 4px solid var(--color);
+    background-color: #e4f0ff;
+}
+[type="red"] {
+    border-top: 4px solid red;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23d00' d='M12,7a1,1,0,0,0-1,1v4a1,1,0,0,0,2,0V8A1,1,0,0,0,12,7Zm0,8a1,1,0,1,0,1,1A1,1,0,0,0,12,15Zm9.71-7.44L16.44,2.29A1.05,1.05,0,0,0,15.73,2H8.27a1.05,1.05,0,0,0-.71.29L2.29,7.56A1.05,1.05,0,0,0,2,8.27v7.46a1.05,1.05,0,0,0,.29.71l5.27,5.27a1.05,1.05,0,0,0,.71.29h7.46a1.05,1.05,0,0,0,.71-.29l5.27-5.27a1.05,1.05,0,0,0,.29-.71V8.27A1.05,1.05,0,0,0,21.71,7.56ZM20,15.31,15.31,20H8.69L4,15.31V8.69L8.69,4h6.62L20,8.69Z'/%3E%3C/svg%3E");
+    background-color: #ffe8e8;
+}
+[type="yellow"] {
+    border-top: 4px solid #fa4;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23e92' d='M12,16a1,1,0,1,0,1,1A1,1,0,0,0,12,16Zm10.67,1.47-8.05-14a3,3,0,0,0-5.24,0l-8,14A3,3,0,0,0,3.94,22H20.06a3,3,0,0,0,2.61-4.53Zm-1.73,2a1,1,0,0,1-.88.51H3.94a1,1,0,0,1-.88-.51,1,1,0,0,1,0-1l8-14a1,1,0,0,1,1.78,0l8.05,14A1,1,0,0,1,20.94,19.49ZM12,8a1,1,0,0,0-1,1v4a1,1,0,0,0,2,0V9A1,1,0,0,0,12,8Z'/%3E%3C/svg%3E");
+    background-color: #fff0e4;    
+}
+[type="green"] {
+    border-top: 4px solid #afa;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%238d8' d='M14.72,8.79l-4.29,4.3L8.78,11.44a1,1,0,1,0-1.41,1.41l2.35,2.36a1,1,0,0,0,.71.29,1,1,0,0,0,.7-.29l5-5a1,1,0,0,0,0-1.42A1,1,0,0,0,14.72,8.79ZM12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z'/%3E%3C/svg%3E");
+    background-color: #f0fff0;
+}
+[type="blue"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2328d' d='M12,2A10,10,0,1,0,22,12,10.01114,10.01114,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8.00917,8.00917,0,0,1,12,20Zm0-8.5a1,1,0,0,0-1,1v3a1,1,0,0,0,2,0v-3A1,1,0,0,0,12,11.5Zm0-4a1.25,1.25,0,1,0,1.25,1.25A1.25,1.25,0,0,0,12,7.5Z'/%3E%3C/svg%3E");
+}
+[vanish] {
+    opacity: 0;
+    animation: stay 4.5s, fadeout 0.5s 4.5s infinite;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border-radius: 4px;
+    z-index: 999;
+}        
+
+[vanish]:after {
+    content: '';
+    animation: roundtime 4.5s linear forwards;
+    position: absolute;
+    width: 95vw;
+    left: 0vw;
+    top: 0;
+    border: 1px solid var(--color);
+    transform-origin: left center;
+}
+
+@keyframes roundtime { to { transform: scaleX(0); } }
+@keyframes stay {
+    from { opacity: 1; }
+    to { opacity: 1; }
+}
+@keyframes fadeout {
+    from {bottom: 10px; opacity: 1;}
+    to {bottom: -100px; opacity: 0;}
+}
+
+[dimmable] { 
+    padding: 0.5em 0.5em 0 5em; 
+    transition: opacity 0.5s;
+    display: flex;
+}
+[dimmable]:after { 
+    content:"×"; 
+    float:right; 
+    font-size:2em; 
+    cursor: pointer;
+}
+[dimmable]:before { 
+    content: attr(data-label);
+    line-height: 2rem;
+} 
+[dimmable]:after { 
+    line-height: 2.5rem;
+    margin-top: -0.5rem;
+    margin-left: 1rem;
+    padding-left: 0.5rem;
+    border-left: 1px solid black;  
+}
+[dimmable]:before { 
+    _display: block;
+    _width: 80vw;
+    _margin-right: 5vw;
+}
+[dimmable]:disabled { 
+    opacity:0 !important; 
+}
+</style>
