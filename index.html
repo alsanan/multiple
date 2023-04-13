@@ -20,6 +20,11 @@
 <!--input class="alert danger dimmable w-full fixed bottom-0 m-1" type="checkbox" data-label="URL del error [Este dato puede ser imprescindible para resolver el problema] : <?=$_REQUEST['url']?>" checked /-->
 <fieldset vanish type="blue">Contact / Contacte / Contacto : <a href="https://t.me/alsan">@alsan</a> (telegram) </fieldset>
 
+<script>
+    if (location.host=='valenciania.com') document.querySelector('#bot').innerHTML='<img src="terrania.svg"/>';
+    if (location.host=='ordelsvalencians.com') document.querySelector('#bot').innerHTML='';
+</script>
+
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100');
